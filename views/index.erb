@@ -1,3 +1,4 @@
 <% @activity.items.each do |item| %>
-	<%= item.content.content %>
+  <%# This replaces relative links to '/' with external links to 'https://github.com/' %>
+  <%= item.content.content.gsub! 'href="/', 'href="https://github.com/' %>
 <% end %>
