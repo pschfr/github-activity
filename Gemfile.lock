@@ -4,11 +4,21 @@ GEM
   specs:
     concurrent-ruby (1.1.5)
     dotenv (2.7.2)
+    ffi (1.10.0)
     mustermann (1.0.3)
     rack (2.0.7)
     rack-protection (2.0.5)
       rack
+    rails-assets-primer-css (12.2.3)
     rails-assets-timeago.js (3.0.0)
+    rb-fsevent (0.10.3)
+    rb-inotify (0.10.0)
+      ffi (~> 1.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -24,7 +34,9 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv (~> 2.7)
+  rails-assets-primer-css (~> 12.2)!
   rails-assets-timeago.js (~> 3.0)!
+  sass (~> 3.7)
   sinatra (~> 2.0)
   sprockets (~> 3.7)
 
