@@ -1,3 +1,4 @@
+<h1 class="f4 text-normal">All activity</h1>
 <% @activity.items.each do |item| %>
   <%# This replaces relative links to '/' with external links to 'https://github.com/' %>
   <% each_item = item.content.content.gsub! 'href="/', 'href="https://github.com/' %>
