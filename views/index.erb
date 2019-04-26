@@ -1,4 +1,10 @@
 <% @activity.items.each do |item| %>
   <%# This replaces relative links to '/' with external links to 'https://github.com/' %>
-  <%= item.content.content.gsub! 'href="/', 'href="https://github.com/' %>
+  <% each_item = item.content.content.gsub! 'href="/', 'href="https://github.com/' %>
+
+  <%# This replaces image src with data-echo for lazy-loading the images %>
+  <% each_item = each_item.gsub! ' src=', ' data-echo=' %>
+
+  <%# Actually print the individual item %>
+  <%= each_item %>
 <% end %>

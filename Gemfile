@@ -14,6 +14,9 @@ gem 'sprockets', '~> 3.7'
 
 # Gems from rails-assets.org
 source 'https://rails-assets.org' do
+  # Image lazy loading functionality
+  gem 'rails-assets-echojs', '~> 1.7'
+
   # CSS library that powers GitHub
   gem 'rails-assets-primer-css', '~> 12.2'
 
